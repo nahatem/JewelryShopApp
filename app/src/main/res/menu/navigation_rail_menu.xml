@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alarms"
+        android:enabled="true"
+        android:icon="@drawable/ic_alarm"
+        android:tooltipText="alarms"
+        android:title="alarms"/>
+    <item
+        android:id="@+id/history"
+        android:enabled="true"
+        android:icon="@drawable/ic_history"
+        android:tooltipText="history"
+        android:title="history"/>
+    <item
+        android:id="@+id/basketball"
+        android:enabled="true"
+        android:icon="@drawable/ic_basketball"
+        android:tooltipText="basketball"
+        android:title="basketball"/>
+    <item
+        android:id="@+id/gamepad"
+        android:enabled="true"
+        android:icon="@drawable/ic_esports"
+        android:tooltipText="esports"
+        android:title="esports"/>
+
+
+
+
+</menu>

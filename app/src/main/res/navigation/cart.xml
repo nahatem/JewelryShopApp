@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart"
+    app:startDestination="@id/cartScreen">
+    <fragment
+        android:id="@+id/cartScreen"
+        android:name="uz.aziz.jewelryshopapp.presenter.fragments.ThirdScreen"
+        android:label="cart"
+        tools:layout="@layout/fragment_third_screen" />
+</navigation>

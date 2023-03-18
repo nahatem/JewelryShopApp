@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catalog"
+    app:startDestination="@id/catalogScreen">
+
+    <fragment
+        android:id="@+id/catalogScreen"
+        android:name="uz.aziz.jewelryshopapp.presenter.fragments.catalog.CatalogMainFragment"
+        android:label="catalog"
+        tools:layout="@layout/fragment_catalog" />
+</navigation>
