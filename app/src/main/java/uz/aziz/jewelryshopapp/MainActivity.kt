@@ -13,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import timber.log.Timber
 import uz.aziz.jewelryshopapp.databinding.ActivityMainBinding
 import uz.aziz.jewelryshopapp.utils.log
 
@@ -20,10 +21,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var binding: ActivityMainBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
@@ -33,12 +36,13 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
-        log("onCreate")
+
+        log("MainActivity", "onCreate")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_optins_menu, menu)
-        log("onCreate")
+        log("MainActivity", "onCreateMenu")
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -63,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        log("onDestroy")
+        log("MainActivity", "onDestroy")
     }
 
     override fun onSupportNavigateUp(): Boolean {

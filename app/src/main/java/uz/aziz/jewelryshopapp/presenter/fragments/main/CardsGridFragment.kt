@@ -1,4 +1,4 @@
-package uz.aziz.jewelryshopapp.presenter.fragments.cards_grid
+package uz.aziz.jewelryshopapp.presenter.fragments.main
 
 import android.os.Bundle
 import android.view.View
@@ -7,7 +7,7 @@ import uz.aziz.jewelryshopapp.R
 import uz.aziz.jewelryshopapp.data.JewelryData
 import uz.aziz.jewelryshopapp.databinding.FragmentCardsGridBinding
 
-import uz.aziz.jewelryshopapp.presenter.fragments.cards_grid.adapter.JewelGridAdapter
+import uz.aziz.jewelryshopapp.presenter.fragments.main.adapter.JewelGridAdapter
 
 
 class CardsGridFragment : Fragment(R.layout.fragment_cards_grid) {

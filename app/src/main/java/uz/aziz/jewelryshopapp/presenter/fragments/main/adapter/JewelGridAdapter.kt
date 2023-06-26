@@ -1,4 +1,4 @@
-package uz.aziz.jewelryshopapp.presenter.fragments.cards_grid.adapter
+package uz.aziz.jewelryshopapp.presenter.fragments.main.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import timber.log.Timber
 import uz.aziz.jewelryshopapp.databinding.JewelCardItemBinding
 import uz.aziz.jewelryshopapp.model.JewelItem
 
@@ -18,7 +19,7 @@ class JewelGridAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: JewelItem) {
-            Log.d("myAdapter", "bind")
+            Timber.tag("myAdapter").d("bind")
             binding.itemImg.setImageResource(item.img)
             binding.itemPrice.text = "${item.price}$"
             binding.itemDesc.text = item.description
