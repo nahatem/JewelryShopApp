@@ -14,7 +14,12 @@ class JewelryData {
             JewelItem(
                 R.drawable.silver_ring2,
                 2000.0,
-                "Ring of power"
+                "Ring of power Ring of power Ring of power"
+            ),
+            JewelItem(
+                R.drawable.silver_ring2,
+                1500.0,
+                "Ring of power Ring of power"
             ),
             JewelItem(
                 R.drawable.silver_ring2,
@@ -24,7 +29,7 @@ class JewelryData {
             JewelItem(
                 R.drawable.silver_ring2,
                 1500.0,
-                "Ring of power"
+                "Ring of power Ring of power Ring of power"
             ),
             JewelItem(
                 R.drawable.silver_ring2,
@@ -34,12 +39,7 @@ class JewelryData {
             JewelItem(
                 R.drawable.silver_ring2,
                 1500.0,
-                "Ring of power"
-            ),
-            JewelItem(
-                R.drawable.silver_ring2,
-                1500.0,
-                "Ring of power"
+                "Ring of power Ring of power"
             ),
             JewelItem(
                 R.drawable.silver_ring2,

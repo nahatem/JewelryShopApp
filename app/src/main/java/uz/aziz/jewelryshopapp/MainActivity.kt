@@ -34,36 +34,36 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.home, R.id.catalog, R.id.cart))
         binding.bottomNavigationView.setupWithNavController(navController)
 
-        setSupportActionBar(binding.toolbar)
-        binding.toolbar.setupWithNavController(navController, appBarConfiguration)
+//        setSupportActionBar(binding.toolbar)
+//        binding.toolbar.setupWithNavController(navController, appBarConfiguration)
 
         log("MainActivity", "onCreate")
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_optins_menu, menu)
-        log("MainActivity", "onCreateMenu")
-        return super.onCreateOptionsMenu(menu)
-    }
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        menuInflater.inflate(R.menu.main_optins_menu, menu)
+//        log("MainActivity", "onCreateMenu")
+//        return super.onCreateOptionsMenu(menu)
+//    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.ic_search -> {
-                Toast.makeText(this, "search selected", Toast.LENGTH_SHORT).show()
-                return true
-            }
-            R.id.ic_settings -> {
-                Toast.makeText(this, "settings selected", Toast.LENGTH_SHORT).show()
-                return true
-            }
-            R.id.history -> {
-                Toast.makeText(this, "history selected", Toast.LENGTH_SHORT).show()
-                return true
-            }
-
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        return when (item.itemId) {
+//            R.id.ic_search -> {
+//                Toast.makeText(this, "search selected", Toast.LENGTH_SHORT).show()
+//                return true
+//            }
+//            R.id.ic_settings -> {
+//                Toast.makeText(this, "settings selected", Toast.LENGTH_SHORT).show()
+//                return true
+//            }
+//            R.id.history -> {
+//                Toast.makeText(this, "history selected", Toast.LENGTH_SHORT).show()
+//                return true
+//            }
+//
+//            else -> super.onOptionsItemSelected(item)
+//        }
+//    }
 
     override fun onDestroy() {
         super.onDestroy()

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeScreen"
-        android:name="uz.aziz.jewelryshopapp.presenter.fragments.main.CardsGridFragment"
+        android:name="uz.aziz.jewelryshopapp.presenter.fragments.main.MainFragment"
         android:label="home"
-        tools:layout="@layout/fragment_cards_grid" />
+        tools:layout="@layout/fragment_main" />
 </navigation>
